@@ -1,0 +1,373 @@
+
+// imports
+
+@import 'colors'
+@import 'typography'
+
+// other styles go here
+
+body
+	padding: 0
+	margin: 0
+	font-family: 'Lato', sans-serif
+
+	p, h1, h2, h3
+		font-family: 'Lato', sans-serif
+
+.service-box
+	i.fa 
+		padding: 0
+		color: $blue
+		margin: 5px 0
+		font-size: 50px
+		text-align:center
+		position: relative
+		display: inline-block
+		width: 110px
+		height: 110px
+		line-height: 107px
+		-webkit-border-radius: 50%
+		-moz-border-radius: 50%
+		border-radius: 50%
+		border: 1px solid $blue
+
+
+
+.show-on-hover:hover > ul.dropdown-menu
+	display: block
+
+ul.dropdown-menu
+	background-color: $blue
+	li a:hover
+		background-color: $dark
+
+.text-top
+	margin-top: 14%
+
+.navbar-inverse
+	margin-bottom: 0px
+	background-color: $blue
+	border-color: $blue
+	.navbar-nav li a
+		color: #fff
+		font-size: 16px
+		font-weight: 200
+.fancy
+	p
+		color: $dark
+		font-family: 'Kameron', serif
+		font-size: 20px
+		font-weight: 400
+		font-weight: 800
+		margin-top: 5px
+		text-transform: italics
+/********************************/
+/*	HERO	*/
+/********************************/
+.fade-carousel 
+	position: relative
+	height: 48\\vh
+
+
+.fade-carousel .slide-4
+	height: 48vh
+	background-size: cover
+	background-position: center center !important
+	background-repeat: no-repeat
+
+
+.fade-carousel .slides .slide-1, .slide-2, .slide-3
+	height: 48vh
+	background-size: cover
+	background-position: center center
+	background-repeat: no-repeat
+
+
+
+.fade-carousel .slides .slide-1 
+	background-image: url("../img/claudia-homepage2.png")
+
+.fade-carousel .slides .slide-2
+	background-image: url("../img/about.jpg")
+
+.fade-carousel .slides .slide-3
+	background-image: url("../img/doors.png")
+
+.fade-carousel .slides .slide-4
+	background-image: url("../img/path.png")
+
+
+
+.hero 
+	position: absolute
+	top: 50%
+	left: 40%
+	z-index: 3
+	color: $dark
+	// text-shadow: 2px 2px 0 rgba(0,0,0,.7)
+	-webkit-transform: translate3d(-50%,-50%,0)
+	-moz-transform: translate3d(-50%,-50%,0)
+	-ms-transform: translate3d(-50%,-50%,0)
+	-o-transform: translate3d(-50%,-50%,0)
+	transform: translate3d(-50%,-50%,0)
+	img
+		margin: auto
+		width: 200px
+
+	@media screen and (max-width: 740px)
+		img, i.fa-angle-double-down
+			opacity: 1
+
+.hero h1 
+	font-family: 'Noto Serif', serif
+	font-size: 1.5em
+	font-weight: bold
+	margin: 0
+	padding: 0
+	line-height: 40px
+	&:first-child
+		font-style: italic
+
+	
+
+
+.hero h2 
+	font-family: 'Noto Serif', serif
+	font-size: 1.5em
+
+.fade-carousel .carousel-inner .item .hero 
+	opacity: 1
+	// -webkit-transition: 2s all ease-in-out .1s
+	// -moz-transition: 2s all ease-in-out .1s
+	// -ms-transition: 2s all ease-in-out .1s
+	// -o-transition: 2s all ease-in-out .1s
+	// transition: 2s all ease-in-out .1s
+
+.fade-carousel .carousel-inner .item.active .hero 
+	opacity: 1
+	// -webkit-transition: 2s all ease-in-out .1s
+	// -moz-transition: 2s all ease-in-out .1s
+	// -ms-transition: 2s all ease-in-out .1s
+	// -o-transition: 2s all ease-in-out .1s
+	// transition: 2s all ease-in-out .1s
+
+#newsletter-container, section.madeit 
+	background: $teal
+	padding: 0px
+
+	.btn-custom-3 
+		color: #fff 
+		background-color: $blue  
+
+	.btn-custom-3:hover 
+		color: #fff
+		background-color: $dark
+
+.btn-custom-2 
+	color: #fff 
+	background-color: $teal
+
+.btn-custom-3 
+	color: #fff 
+	background-color: $blue  
+
+.btn-custom-3:hover 
+	color: #fff
+	background-color: $dark
+
+::selection 
+	background-color: #7bae23
+	color: #fff
+
+#newsletter-container  h3, section.madeit h3
+	font-size: 26px
+	line-height: 66px
+	color: $dark
+	margin: 0
+	float: left
+	font-weight: 400
+
+#newsletter-container form, section.madeit form
+	float: right
+	padding-top: 10px
+
+
+#newsletter-container, section.madeit 
+	input
+		height: 46px
+		vertical-align: top
+		margin-right: 5px
+		border-radius: 4px
+		background: $lightgray
+		line-height: 20px
+		padding: 5px 20px 5px 20px
+		color: #727b7c
+
+	.email-input
+		width: 300px
+
+input, select, textarea 
+	outline: 0
+
+
+section
+	p
+		font-size: 18px
+		font-weight: 300
+		line-height: 1.4
+section.intro
+	padding: 44px 0 44px
+	background-color: #F0F0F0
+	h1
+		font-size: 34px
+		line-height: 50px
+
+section.praise, section.faq
+	background-color: #F2F2F2 !important
+	.container
+		max-width: 790px
+
+	p:first-child
+		font-style: italic
+		b
+			color: #7F7F7F
+
+		
+
+	.divider
+		height: 1px
+		width: 200px
+		background-color: #F3FFFF
+		margin: auto
+		margin-top: 30px
+		margin-bottom: 30px
+	i
+		color: $blue
+		opacity: 9
+
+	h1
+		margin-bottom: 40px
+
+section.faq
+	padding-bottom: 30px
+	padding-top: 30px
+
+section.white
+	background-color: #fff !important
+
+.panel-heading
+	background-color: #F9F9F9
+
+.panel-body
+	font-size: 19px
+	font-weight: 200
+	text-align: left
+
+h4.panel-title
+	font-weight: 600
+	font-size: 19px
+h2.intro-about
+	margin-bottom: 20px
+
+
+section.intro2
+	padding: 44px 0 44px
+	background-color: #fff
+	p.lead
+		max-width: 790px
+		margin: auto
+		font-size: 19px
+		margin-bottom: 20px
+	img.about-img
+		max-width: 866px
+		margin: auto
+		border: 4px #C9C9C9 solid
+		margin-top: 10px
+		margin-bottom: 20px
+
+.small 
+	max-width: 800px
+	margin: auto
+
+hr.mini
+	max-width: 100px
+	background-color: #000
+	color: #fff
+
+	h1 span.subtitle, h2 span.subtitle, h3 span.subtitle 
+		display: block
+		font-size: 15px
+		padding: 0
+		margin: 2px 0 0 0
+	span.subtitle
+		text-transform: uppercase
+
+	h1
+		margin: 0 0 44px 0
+
+hr.half-margins
+	margin: 0 0 44px 0
+
+section.madeit
+	background-color: $blue !important
+	margin-top: 20px
+
+
+	h3
+		color: #fff
+		font-weight: 300
+		font-size: 20px
+
+a.linky
+	color: $teal
+
+section.services
+	padding-top: 30px
+	padding-bottom: 40px
+
+.medi img
+	border: 1px solid $dark
+	padding: 10px
+
+footer
+	background-color: $blue
+	color: #fff
+	font-size: 17px
+	font-weight: 300
+	padding-top: 40px
+	line-height: 1.3
+
+	p.author
+		margin-top: 15px
+
+.quote i
+	color: #CFCFCF
+
+.footer-bottom 
+	margin-top: 20px
+	background: $dark
+	color: #707E8C
+
+.footer-bottom .container.inner 
+	padding-top: 30px
+	padding-bottom: 30px
+
+.footer-bottom p, .footer-bottom a 
+	color: #CFCFCF
+
+.footer-bottom p 
+	padding: 0
+	margin: 0
+
+.footer-menu 
+	padding: 0
+	margin: 0
+	list-style: none
+
+	li
+		display: inline
+		padding-left: 10px
+
+
+
+
