@@ -54,7 +54,6 @@ ul.dropdown-menu
 		font-weight: 200
 .navbar-nav li .active, li:hover
 	background-color: #2B8AA9
-	font-size: 16px
 	font-weight: 200
 
 .fancy
@@ -82,7 +81,7 @@ ul.dropdown-menu
 	
 
 
-.fade-carousel .slides .slide-1, .slide-2, .slide-3, .slide-4
+.fade-carousel .slides .slide-1, .slide-2, .slide-3, .slide-4, .slide-6
 	height: 48vh
 	background-size: cover
 	background-position: center center
@@ -91,7 +90,7 @@ ul.dropdown-menu
 
 
 .fade-carousel .slides .slide-1 
-	background-image: url("../img/claudia-homepage2.png")
+	background-image: url("../img/claudia-homepage.png")
 
 .fade-carousel .slides .slide-2
 	background-image: url("../img/about.jpg")
@@ -104,6 +103,9 @@ ul.dropdown-menu
 
 .fade-carousel .slides .slide-5
 	background-image: url("../img/contact.jpeg")
+
+.fade-carousel .slides .slide-6
+	background-image: url("../img/resources.jpg")
 
 
 
@@ -348,13 +350,34 @@ section.madeit
 a.linky
 	color: $teal
 
-section.services, section.contact
+section.services, section.contact, section.resources
 	padding-top: 30px
 	padding-bottom: 40px
 
 .medi img
 	border: 1px solid $dark
 	padding: 10px
+
+.post
+	margin-top: 120px
+	&:first-child
+		margin-top: 0px
+	p.lead
+		margin-top: 20px
+	h1
+		color: $dark
+	.social
+		float: right !important
+		margin-right: 10px
+	p.social
+		margin-top: 15px
+		margin-right: 20px
+		color: $blue
+		font-weight: bolder
+
+.list-unstyled
+	li:hover
+		background-color: transparent
 
 footer
 	background-color: $blue
